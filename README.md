@@ -1,5 +1,22 @@
 # E-Commerce REST API using Node.js
 
+## Use of the app
+To use the app, you can use a tool like Postman to send HTTP requests to the API endpoints.
+
+You have to first signup as an admin, then you can login and add products (with the token).
+You can see al the products using the get action. 
+
+To be able to create an invoice, you have to signup again as a user, login, see products and add an invoice using a product that already exists. 
+
+Here is an example of an input:
+{
+    "date": "2025-03-31T10:00:00.000Z",
+    "items": [
+        { "productName": "Wireless Headphones", "model": "WH-1000XM5", "quantity": 2 },
+        { "productName": "Smartwatch Pro", "model": "Forerunner 965", "quantity": 1 }
+    ]
+}
+
 ## Functionalitites
 
 ### User Management
