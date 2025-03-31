@@ -5,6 +5,7 @@ const path = require("path")
 
 const userRoutes = require("./routes/users")
 const productRoutes = require("./routes/products")
+const invoiceRoutes = require("./routes/invoices")
 const connectDB = require("./utils/db");
 
 // MIDDLEWARE
@@ -18,6 +19,7 @@ app.use(express.json())
 // ROUTES
 app.use("/api/users", userRoutes)
 app.use("/api/products", productRoutes)
+app.use("/api/invoices", invoiceRoutes)
 
 // cors middleware
 app.use((req, res, next) => {

@@ -11,11 +11,6 @@ const invoiceSchema= new mongoose.Schema({
         required: true
     },
 
-    imageUrl: {
-        type: Buffer,
-        required: true
-    },
-
     totalAmount: {
         type: Number,
         required: true
